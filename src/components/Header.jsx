@@ -1,9 +1,30 @@
 import React from 'react'
 
 function Header() {
-  return (
-    <div>Header</div>
-  )
+    return (
+        <header className="shadow-md fixed top-0 left-0 w-full z-50 bg-slate-200">
+            <div className="max-w-6xl mx-auto flex items-center justify-around gap-10">
+                <img src="./assets/logo.png" alt="AP Economics" className='h-36 p-4' />
+                <div>
+                    <h1 className="text-2xl font-bold italic text-slate-600">Learn Economics and Statistics</h1>
+                    <p>with <strong>Necmi Gunduz</strong></p>
+                </div>
+                <nav className="hidden md:flex space-x-8 text-gray-700 font-medium">
+                    <a href="#about" className="hover:text-indigo-600 transition">About Me</a>
+                    <a href="#services" className="hover:text-indigo-600 transition">Services</a>
+                    <a href="#contact" className="hover:text-indigo-600 transition">Contact</a>
+                </nav>
+
+                {/* Call to Action */}
+                <a
+                    href="#contact"
+                    className="hidden md:inline-block bg-indigo-600 text-white px-4 py-2 rounded-xl shadow hover:bg-indigo-700 transition"
+                >
+                    Book a Lesson
+                </a>
+            </div>
+        </header>
+    );
 }
 
-export default Header
+export default Header;
