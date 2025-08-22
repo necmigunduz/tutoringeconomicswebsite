@@ -1,15 +1,17 @@
 import React from 'react'
 import Logo from '../assets/Logo.png'
+
 function Header() {
     return (
         <header className="shadow-md fixed top-0 left-0 w-full z-50 bg-fuchsia-100">
-            <div className="max-w-6xl mx-auto flex items-center justify-around gap-10">
-                <img src={Logo} alt="AP Economics" className='h-48 p-4' />
+            <div className="w-full flex items-center justify-around px-8">
+                <img src={Logo} alt="AP Economics" className='h-48' />
+                
                 <div>
-                    <h1 className="text-2xl font-bold italic text-slate-900">Learn Economics and Statistics</h1>
-                    <p>with <strong className="text-indigo-900">Necmi Gunduz</strong></p>
+                    <h1 className="text-4xl font-bold italic text-slate-900">Learn Economics and Statistics</h1>
+                    <p className='text-3xl'>with <strong className="text-5xl text-indigo-900">Necmi Gunduz</strong></p>
                 </div>
-                <nav className="hidden md:flex space-x-8 text-gray-700 font-medium">
+                <nav className="hidden md:flex space-x-8 text-gray-700 font-medium text-2xl">
                     <a href="#about" className="hover:text-indigo-600 transition">About Me</a>
                     <a href="#services" className="hover:text-indigo-600 transition">Services</a>
                     <a href="#contact" className="hover:text-indigo-600 transition">Contact</a>
@@ -18,7 +20,7 @@ function Header() {
                 {/* Call to Action */}
                 <a
                     href="#contact"
-                    className="hidden md:inline-block bg-indigo-600 text-white px-4 py-2 rounded-xl shadow hover:bg-indigo-700 transition"
+                    className="hidden md:inline-block ml-2 bg-indigo-600 text-white px-4 py-2 rounded-xl shadow hover:bg-indigo-700 transition"
                 >
                     Book a Lesson
                 </a>
