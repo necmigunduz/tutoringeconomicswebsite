@@ -26,7 +26,7 @@ function ContactForm() {
   };
 
   return (
-    <section id="contact" className="py-20 bg-white px-6">
+    <section id="contact" className="h-screen flex flex-col justify-center items-center text-center bg-gradient-to-br from-indigo-100 to-white px-6">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
           Contact Me

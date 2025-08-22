@@ -1,10 +1,10 @@
 import React from 'react'
-
+import Logo from '../assets/Logo.png'
 function Header() {
     return (
-        <header className="shadow-md fixed top-0 left-0 w-full z-50 bg-slate-200">
+        <header className="shadow-md fixed top-0 left-0 w-full z-50 bg-fuchsia-100">
             <div className="max-w-6xl mx-auto flex items-center justify-around gap-10">
-                <img src="./assets/logo.png" alt="AP Economics" className='h-36 p-4' />
+                <img src={Logo} alt="AP Economics" className='h-48 p-4' />
                 <div>
                     <h1 className="text-2xl font-bold italic text-slate-900">Learn Economics and Statistics</h1>
                     <p>with <strong className="text-indigo-900">Necmi Gunduz</strong></p>
