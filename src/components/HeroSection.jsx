@@ -12,7 +12,7 @@ function HeroSection() {
       </h2>
 
       <p className="text-lg md:text-xl text-gray-600 max-w-2xl mb-8">
-        I offer personalized tutoring in Economics and Statistics — online and in the Netherlands.  
+        I offer personalized tutoring in Economics and Statistics — online.  
         Boost your understanding and succeed in your courses!
       </p>
 
