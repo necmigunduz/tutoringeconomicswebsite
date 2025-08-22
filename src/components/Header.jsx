@@ -6,8 +6,8 @@ function Header() {
             <div className="max-w-6xl mx-auto flex items-center justify-around gap-10">
                 <img src="./assets/logo.png" alt="AP Economics" className='h-36 p-4' />
                 <div>
-                    <h1 className="text-2xl font-bold italic text-slate-600">Learn Economics and Statistics</h1>
-                    <p>with <strong>Necmi Gunduz</strong></p>
+                    <h1 className="text-2xl font-bold italic text-slate-900">Learn Economics and Statistics</h1>
+                    <p>with <strong className="text-indigo-900">Necmi Gunduz</strong></p>
                 </div>
                 <nav className="hidden md:flex space-x-8 text-gray-700 font-medium">
                     <a href="#about" className="hover:text-indigo-600 transition">About Me</a>
