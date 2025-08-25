@@ -1,28 +1,22 @@
 import { useRef } from "react";
-import emailjs from "emailjs-com";
 
 function ContactForm() {
   const form = useRef();
 
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
+    const formData = {
+      user_name: form.current.user_name.value,
+      user_email: form.current.user_email.value,
+      message: form.current.message.value,
+    }
 
-    emailjs
-      .sendForm(
-        "necmigunduz",      // from EmailJS dashboard
-        "__ejs-test-mail-service__",     // from EmailJS dashboard
-        form.current,
-        "X8gaBgtBJ-ydS0hB7"       // from EmailJS account
-      )
-      .then(
-        (result) => {
-          alert("Message sent successfully! ✅");
-          form.current.reset();
-        },
-        (error) => {
-          alert("Failed to send message ❌: " + error.text);
-        }
-      );
+    const res = await fetch("http://localhost:5000/send-email", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
+    });
+    console.log('RES', res);
   };
 
   return (
@@ -32,7 +26,7 @@ function ContactForm() {
           Contact Me
         </h2>
         <p className="text-lg text-gray-600 mb-12">
-          Have questions or want to book a lesson?  
+          Have questions or want to book a lesson?
           Send me a message and I’ll get back to you shortly!
         </p>
 
