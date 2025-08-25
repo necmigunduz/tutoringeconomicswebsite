@@ -11,12 +11,11 @@ function ContactForm() {
       message: form.current.message.value,
     }
 
-    const res = await fetch("http://localhost:5000/send-email", {
+    await fetch("http://localhost:5000/send-email", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData),
-    });
-    console.log('RES', res);
+    }).then(() => alert('Your message is on its way to Necmi! He’ll be reaching out soon to discuss how he can help you succeed.'))
   };
 
   return (
