@@ -9,32 +9,43 @@ function ContactForm() {
       user_name: form.current.user_name.value,
       user_email: form.current.user_email.value,
       message: form.current.message.value,
-    }
+    };
 
     await fetch("http://localhost:5000/send-email", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData),
-    }).then(() => alert('Your message is on its way to Necmi! He’ll be reaching out soon to discuss how he can help you succeed.'))
+    })
+      .then(() =>
+        alert(
+          "Your message is on its way to Necmi! He`ll be reaching out soon to discuss how he can help you succeed. `${@mailto:necmigunduz@gmail.com}`"
+        )
+      )
+      .catch(() =>
+        alert(
+          "An error occurred! Try to contact him through his email: necmigunduz@gmail.com"
+        )
+      );
   };
 
   return (
-    <section id="contact" className="h-screen flex flex-col justify-center items-center text-center bg-gradient-to-br from-indigo-100 to-white px-6">
+    <section
+      id="contact"
+      className="h-screen flex flex-col justify-center items-center text-center bg-gradient-to-br from-indigo-100 to-white px-6"
+    >
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
           Contact Me
         </h2>
         <p className="text-lg text-gray-600 mb-12">
-          Have questions or want to book a lesson?
-          Send me a message and I’ll get back to you shortly!
+          Have questions or want to book a lesson? Send me a message and I’ll
+          get back to you shortly!
         </p>
 
         <form ref={form} onSubmit={sendEmail} className="grid gap-6 text-left">
           {/* Name */}
           <div>
-            <label className="block text-gray-700 font-medium mb-2">
-              Name
-            </label>
+            <label className="block text-gray-700 font-medium mb-2">Name</label>
             <input
               type="text"
               name="user_name"
