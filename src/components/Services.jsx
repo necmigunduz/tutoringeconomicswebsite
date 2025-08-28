@@ -23,9 +23,9 @@ function Services() {
   ];
 
   return (
-    <section id="services" className="h-screen flex flex-col justify-center items-center text-center bg-gradient-to-br from-indigo-100 to-white px-6">
-      <div className="max-w-6xl mx-auto text-center my-20">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-12">
+    <section id="services" className="h-screen flex flex-1 flex-col justify-center text-center bg-gradient-to-br from-indigo-100 to-white px-6">
+      <div className="max-w-6xl mx-auto text-center">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-12 max-sm:mb-2">
           Services
         </h2>
 
@@ -33,13 +33,13 @@ function Services() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-white shadow-md rounded-2xl p-8 hover:shadow-xl transition"
+              className="bg-white shadow-md rounded-2xl p-2 hover:shadow-xl transition"
             >
-              <div className="text-5xl mb-4">{service.icon}</div>
-              <h3 className="text-2xl font-semibold text-gray-800 mb-3">
+              <div className="text-5xl md:text-4xl sm:text-3xl max-sm:text-3xl mb-4 max-sm:mb-1">{service.icon}</div>
+              <h3 className="text-2xl md:text-2xl sm:text-xl max-sm:text-base font-semibold text-gray-800 mb-3">
                 {service.title}
               </h3>
-              <p className="text-gray-600">{service.description}</p>
+              <p className="text-gray-600 max-sm:text-sm">{service.description}</p>
             </div>
           ))}
         </div>

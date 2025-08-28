@@ -5,7 +5,7 @@ function Header() {
     return (
         <header className="shadow-md fixed top-0 left-0 w-full z-50 bg-fuchsia-100">
             <div className="w-full flex items-center justify-around px-8">
-                <img src={Logo} alt="AP Economics" className='h-48 lg:h-56 md:h-40 sm:h-32 max-sm:h-24' />
+                <img src={Logo} alt="AP Economics" className='h-48 md:h-48 sm:h-32 max-sm:h-24' />
                 
                 <div>
                     <h1 className="text-4xl md:text-2xl sm:text-lg max-sm:text-base font-bold italic text-slate-900">Learn Economics and Statistics</h1>

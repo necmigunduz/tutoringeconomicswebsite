@@ -10,12 +10,12 @@ function Footer() {
         </p>
 
         {/* Social Links */}
-        <div className="flex space-x-6 text-lg">
+        <div className="flex space-x-6 max-sm:space-x-2 text-lg">
           <a
             href="https://www.linkedin.com/in/necmigunduz"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-indigo-400 transition"
+            className="hover:text-indigo-400 transition max-sm:text-xs"
           >
             LinkedIn
           </a>
@@ -23,7 +23,7 @@ function Footer() {
             href="https://www.instagram.com/apeconomicstutoring/"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-indigo-400 transition"
+            className="hover:text-indigo-400 transition max-sm:text-xs"
           >
             Instagram
           </a>
@@ -31,13 +31,13 @@ function Footer() {
             href="https://www.youtube.com/@necmigunduz"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-indigo-400 transition"
+            className="hover:text-indigo-400 transition max-sm:text-xs"
           >
             YouTube
           </a>
           <a
             href="mailto:necmigunduz@gmail.com"
-            className="hover:text-indigo-400 transition"
+            className="hover:text-indigo-400 transition max-sm:text-xs"
           >
             Email
           </a>
