@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 function Footer() {
   return (
@@ -28,6 +28,14 @@ function Footer() {
             Instagram
           </a>
           <a
+            href="https://www.youtube.com/@necmigunduz"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-indigo-400 transition"
+          >
+            YouTube
+          </a>
+          <a
             href="mailto:necmigunduz@gmail.com"
             className="hover:text-indigo-400 transition"
           >
@@ -39,4 +47,4 @@ function Footer() {
   );
 }
 
-export default Footer
+export default Footer;
