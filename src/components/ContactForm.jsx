@@ -29,10 +29,13 @@ function ContactForm() {
   };
 
   return (
-    <div className="h-screen flex flex-col justify-center items-center text-center bg-gradient-to-br from-indigo-100 to-white px-6">
+    <div
+      id="contact"
+      className="h-screen flex flex-col justify-center items-center text-center bg-gradient-to-br from-indigo-100 to-white px-6"
+    >
       <p className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-        Would you want me to help you understand <br /> concepts in economics and/or
-        statistics? <br /> <br />
+        Would you want me to help you understand <br /> concepts in economics
+        and/or statistics? <br /> <br />
         <a
           className="text-blue-600"
           href="https://meetings-eu1.hubspot.com/necmi-gunduz"
