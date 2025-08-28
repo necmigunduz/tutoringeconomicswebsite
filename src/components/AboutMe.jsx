@@ -27,7 +27,7 @@ function AboutMe() {
         </p>
 
         <p className="text-xl md:text-xl sm:text-base max-sm:text-sm text-gray-900 leading-relaxed">
-          I offer lessons both <span className="font-medium">online</span>.  
+          I offer lessons <span className="font-medium">online</span>.  
           Let's work together to make learning an enjoyable and rewarding experience!
         </p>
       </div>
