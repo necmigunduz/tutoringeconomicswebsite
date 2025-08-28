@@ -11,7 +11,7 @@ function HeroSection() {
         Learn Economics & Statistics<br />
         <span className="text-indigo-600">With Confidence</span>
       </h2> */}
-      <img className="m-3 w-80" src={Necmi} alt="Necmi"/>
+      <img className="m-3 w-80 md:w-60 sm:w-44 max-sm:w-44 " src={Necmi} alt="Necmi"/>
       <p className="text-lg md:text-3xl text-gray-600 max-w-2xl my-8">
         I offer personalized tutoring in Economics and Statistics — online.  
         Boost your understanding and succeed in your courses!

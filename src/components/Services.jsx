@@ -24,7 +24,7 @@ function Services() {
 
   return (
     <section id="services" className="h-screen flex flex-col justify-center items-center text-center bg-gradient-to-br from-indigo-100 to-white px-6">
-      <div className="max-w-6xl mx-auto text-center">
+      <div className="max-w-6xl mx-auto text-center my-20">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-12">
           Services
         </h2>

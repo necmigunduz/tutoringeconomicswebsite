@@ -8,8 +8,8 @@ function Header() {
                 <img src={Logo} alt="AP Economics" className='h-48' />
                 
                 <div>
-                    <h1 className="text-4xl font-bold italic text-slate-900">Learn Economics and Statistics</h1>
-                    <p className='text-3xl'>with <strong className="text-5xl text-indigo-900">Necmi Gunduz</strong></p>
+                    <h1 className="text-4xl md:text-2xl sm:text-lg max-sm:text-base font-bold italic text-slate-900">Learn Economics and Statistics</h1>
+                    <p className='text-3xl md:text-2xl sm:text-lg max-sm:text-base'>with <strong className="text-5xl md:text-2xl sm:text-lg max-sm:text-base text-indigo-900">Necmi Gunduz</strong></p>
                 </div>
                 <nav className="hidden md:flex space-x-8 text-gray-700 font-medium text-2xl">
                     <a href="#about" className="hover:text-indigo-600 transition">About Me</a>

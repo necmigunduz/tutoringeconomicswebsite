@@ -8,7 +8,7 @@ import Footer from './components/Footer'
 
 function App() {
   return (
-    <div className="font-sans text-gray-800 flex-column">
+    <div className="font-sans text-gray-800 flex-column my-1">
       <Header />
       <HeroSection />
       <AboutMe />
