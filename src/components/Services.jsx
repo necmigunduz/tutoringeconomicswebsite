@@ -23,7 +23,7 @@ function Services() {
   ];
 
   return (
-    <section id="services" className="h-screen flex flex-1 flex-col justify-center text-center bg-gradient-to-br from-indigo-100 to-white px-6">
+    <section id="services" className="h-screen flex flex-col justify-center text-center bg-gradient-to-br from-indigo-100 to-white px-6">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-12 max-sm:mb-2">
           Services

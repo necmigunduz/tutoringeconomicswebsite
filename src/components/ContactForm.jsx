@@ -29,10 +29,13 @@ function ContactForm() {
   };
 
   return (
-    <div
+    <section
       id="contact"
       className="h-screen flex flex-col justify-center items-center text-center bg-gradient-to-br from-indigo-100 to-white px-6"
     >
+      <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-12 max-sm:mb-2">
+        Book an Appointment
+      </h2>
       <p className="text-3xl md:text-2xl sm:text-xl max-sm:text-lg font-semibold text-gray-800 mb-6">
         Would you want me to help you understand <br /> concepts in economics
         and/or statistics? <br /> <br />
@@ -40,10 +43,10 @@ function ContactForm() {
           className="text-sky-500 text-3xl md:text-2xl sm:text-xl max-sm:text-lg font-semibold hover:underline"
           href="https://meetings-eu1.hubspot.com/necmi-gunduz"
         >
-          Book an appointment with me
+          Book a trial lesson with me
         </a>
       </p>
-    </div>
+    </section>
     // <section
     //   id="contact"
     //   className="h-screen flex flex-col justify-center items-center text-center bg-gradient-to-br from-indigo-100 to-white px-6"

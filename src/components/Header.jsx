@@ -11,10 +11,10 @@ function Header() {
                     <h1 className="text-4xl md:text-2xl sm:text-lg max-sm:text-base font-bold italic text-slate-900">Learn Economics and Statistics</h1>
                     <p className='text-3xl md:text-2xl sm:text-lg max-sm:text-base'>with <strong className="text-5xl md:text-2xl sm:text-lg max-sm:text-base text-indigo-900">Necmi Gunduz</strong></p>
                 </div>
-                <nav className="hidden md:flex space-x-8 text-gray-700 font-medium text-2xl">
+                <nav className="hidden lg:flex md:flex sm:flex space-x-8 text-gray-700 font-medium lg:text-2xl md:text-base sm:text-sm">
                     <a href="#about" className="hover:text-indigo-600 transition">About Me</a>
                     <a href="#services" className="hover:text-indigo-600 transition">Services</a>
-                    <a href="#contact" className="hover:text-indigo-600 transition">Contact</a>
+                    <a href="#contact" className="hover:text-indigo-600 transition">Book A Lesson</a>
                 </nav>
 
                 {/* Call to Action */}
