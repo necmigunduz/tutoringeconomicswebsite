@@ -24,7 +24,7 @@ function Header() {
                 <img
                     src={Banner}
                     alt="Economics Terms Ball"
-                    className="h-48 md:h-48 sm:h-32 max-sm:h-24 border-4 border-dashed border-green-500 rounded-full m-5 bg-stone-200 p-1"
+                    className="h-48 md:h-48 sm:h-32 max-sm:h-24 border-4 border-dashed border-green-500 rounded-full m-1 bg-stone-200 p-1"
                 />
 
                 <nav
