@@ -1,4 +1,7 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin, faInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 function Footer() {
   return (
@@ -10,36 +13,36 @@ function Footer() {
         </p>
 
         {/* Social Links */}
-        <div className="flex space-x-6 max-sm:space-x-2 text-lg">
+        <div className="flex space-x-6 max-sm:space-x-3 text-2xl">
           <a
             href="https://www.linkedin.com/in/necmigunduz"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-indigo-400 transition max-sm:text-xs"
+            className="hover:text-indigo-400 transition"
           >
-            LinkedIn
+            <FontAwesomeIcon icon={faLinkedin} />
           </a>
           <a
             href="https://www.instagram.com/apeconomicstutoring/"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-indigo-400 transition max-sm:text-xs"
+            className="hover:text-pink-400 transition"
           >
-            Instagram
+            <FontAwesomeIcon icon={faInstagram} />
           </a>
           <a
             href="https://www.youtube.com/@necmigunduz"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-indigo-400 transition max-sm:text-xs"
+            className="hover:text-red-500 transition"
           >
-            YouTube
+            <FontAwesomeIcon icon={faYoutube} />
           </a>
           <a
             href="mailto:necmigunduz@gmail.com"
-            className="hover:text-indigo-400 transition max-sm:text-xs"
+            className="hover:text-green-400 transition"
           >
-            Email
+            <FontAwesomeIcon icon={faEnvelope} />
           </a>
         </div>
       </div>

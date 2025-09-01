@@ -41,9 +41,9 @@ function Header() {
                 </nav>
                 <a
                     href="#contact"
-                    className="hidden md:inline-block ml-2 bg-indigo-600 text-white px-4 py-2 rounded-xl shadow hover:bg-indigo-700 transition"
+                    className="hidden md:inline-block text-xl ml-2 bg-indigo-600 text-white px-4 py-2 rounded-xl shadow hover:bg-indigo-700 transition font-bold"
                 >
-                    Book a Lesson
+                    Book a lesson
                 </a>
             </div>
         </header>
