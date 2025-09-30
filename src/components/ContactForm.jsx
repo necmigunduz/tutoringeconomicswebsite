@@ -1,5 +1,5 @@
 import { useRef } from "react";
-
+import Display from '../assets/Display.png';
 function ContactForm() {
   const form = useRef();
 
@@ -31,7 +31,7 @@ function ContactForm() {
   return (
     <section
       id="contact"
-      className="h-screen flex flex-col justify-center items-center text-center bg-gradient-to-br from-indigo-100 to-white px-6"
+      className="h-screen flex flex-col justify-center items-center text-center bg-gradient-to-br from-purple-100 to-white px-6"
     >
       <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-12 max-sm:mb-2">
         Book an Appointment
