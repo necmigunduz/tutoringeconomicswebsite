@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "../assets/Logo.png";
-import Banner from "../assets/Banner.png";
+
 function Header() {
     return (
         <header className="shadow-md fixed top-0 left-0 w-full z-50 bg-fuchsia-100">
@@ -21,15 +21,9 @@ function Header() {
                         </strong>
                     </p>
                 </div>
-                <img
-                    src={Banner}
-                    alt="Economics Terms Ball"
-                    className="h-48 md:h-48 sm:h-32 max-sm:h-24 border-4 border-dashed border-green-500 rounded-full m-1 bg-stone-200 p-1"
-                />
-
+                
                 <nav
                     className="hidden lg:flex md:flex sm:flex space-x-8 text-gray-700 font-medium lg:text-2xl md:text-base sm:text-sm"
-                    style={{ backgroundImage: { Banner } }}
                 >
                     <a href="#about" className="hover:text-indigo-600 transition">
                         About Me

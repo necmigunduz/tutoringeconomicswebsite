@@ -1,5 +1,7 @@
 import { useRef } from "react";
-import Display from '../assets/Display.png';
+// import Display from '../assets/Display.png';
+import Banner from "../assets/Banner.png";
+
 function ContactForm() {
   const form = useRef();
 
@@ -33,6 +35,15 @@ function ContactForm() {
       id="contact"
       className="h-screen flex flex-col justify-center items-center text-center bg-gradient-to-br from-purple-100 to-white px-6"
     >
+      <p className="text-3xl md:text-4xl font-bold mb-12 max-sm:mb-2 bg-black px-10 py-6 text-white rounded-lg w-full">
+        Let us learn together!
+      </p>
+      <img
+        src={Banner}
+        alt="Economics Terms Ball"
+        className="h-5/6 md:h-3/6 sm:h-2/6 max-sm:h-2/6 border-8 border-dashed border-l-green-600 border-r-black border-t-zinc-500 border-b-yellow-400 rounded-full mt-2 mb-5 bg-stone-200 p-1"
+      />
+
       <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-12 max-sm:mb-2">
         Book an Appointment
       </h2>
@@ -40,7 +51,7 @@ function ContactForm() {
         Would you want me to help you understand <br /> concepts in economics
         and/or statistics? <br /> <br />
         <a
-          className="text-sky-500 text-3xl md:text-2xl sm:text-xl max-sm:text-lg font-semibold hover:underline"
+          className="text-3xl md:text-2xl sm:text-xl max-sm:text-lg font-semibold hover:bg-black bg-blue-600 rounded-lg text-white hover:text-yellow-300 py-2 px-12"
           href="https://meetings-eu1.hubspot.com/necmi-gunduz"
         >
           Book a trial lesson with me
